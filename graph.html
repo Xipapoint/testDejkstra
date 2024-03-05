@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="input_block indent">
+            <h2 class="heading">Create graph!</h2>
+
+            <button class="delete_button" id="delete" onclick="deleteVertices()">Delete all vertices</button>
+            <button class="adding_button data_characteristics" id="add_vertice" onclick="addVertice()">Add vertice</button>
+            <div class="block_adding_edge">
+                <div class="vertices_input">
+                    <input class="input_weight_edge" id="first_index" type="text" title="Weight of edge" placeholder="Enter first index of vertex">
+                    <input class="input_weight_edge" id="second_index" type="text" title="Weight of edge" placeholder="Enter second index of vertex">
+                </div>
+                <button class="create_edge" onclick="createEdge()">Create edge</button>
+            </div>
+
+
+            <div class="dejkstra_block">
+                <div class="vertices_input">
+                    <input class="input_weight_edge" id="first_dejkstra_index" type="text" title="Weight of edge" placeholder="Enter first index of vertex">
+                    <input class="input_weight_edge" id="second_dejkstra_index" type="text" title="Weight of edge" placeholder="Enter second index of vertex">
+                </div>
+
+                <button class="find_way data_characteristics" onclick="dejkstra()">Find the shortest way</button>
+            </div>
+
+        </div>
+        <div class="graph_block indent" id="graph">
+            
+        </div>
+    </div>
+
+
+    <script src="graph.js"></script>
+</body>
+</html>
